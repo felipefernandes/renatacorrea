@@ -1,0 +1,130 @@
+/*
+Theme Name: Renata Correa 2012
+Theme URI: http://renatacorrea.com.br/
+Description: A modern, minimalist blog theme designed and coded by Felipe Fernandes. Version: 1.0
+Author: Felipe Fernandes
+Author URI: http://felipefernandes.nu
+*/
+
+/* custom fonts */
+@font-face {  
+	font-family: 'ClarendonTLig';
+	src: url('ClarendonTLig.ttf');
+}
+
+@font-face {  
+	font-family: 'where stars shine the brightest';
+	src: url('where stars shine the brightest.ttf');
+}
+
+body { margin:0; padding:0; font-family:'Georgia', serif; font-size:14px; color:#3a3931; background:url('images/riodejaneiro_bg.jpg') no-repeat top left fixed; }
+
+h2, h3 { font-family: 'ClarendonTLig', serif; color:#93907b; }
+
+/* classes comuns */
+.conteudo { padding-top: 30px; }
+
+/* aba principal */
+#menu_principal { width:222px; height:100%; background-color:#ce4c62; position:fixed; z-index:80; left:0; text-align:right; color:#fff; }
+#menu_principal h1 { border-bottom:1px solid #f5c65c; width:184px; margin:30px auto 0; font-family:'where stars shine the brightest', serif; font-size:62.77px; text-align:center; text-shadow: 1px 1px 1px #721c28; filter: dropshadow(color=#721c28, offx=1, offy=1); }
+#menu_principal a { text-decoration:none; color:#fff; }
+#menu_principal ul { list-style:none; margin:27px 0 25px 0; padding:0;  width:210px; }
+#menu_principal ul li { margin:0 0 5px; }
+#menu_principal ul li a { font-family: 'ClarendonTLig', serif; font-size:24px; padding:5px 8px; line-height: 33px; text-shadow: 1px 1px 1px #721c28; filter: dropshadow(color=#721c28, offx=1, offy=1); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }						
+#menu_principal ul li a:hover,
+#menu_principal ul li a.ativo { background-color:#b44356; }												
+#menu_principal #assinatura { position:absolute; bottom:0; left:65px; margin-bottom:20px; font-family: 'ClarendonTLig', serif; font-size:11px; }
+
+/* aba portifolio */
+#portifolio_tab { width:168px; height:100%; background-color:#ce7c8a; position:fixed; z-index:70; left:-200px; display:none; }
+#portifolio_tab ul { list-style:none; text-align:left; margin: 127px 0 0 15px; padding:0; }
+#portifolio_tab ul li { text-shadow: 1px 1px 1px #721c28; filter: dropshadow(color=#721c28, offx=1, offy=1); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin-bottom:0; padding: 2px 5px; }						
+#portifolio_tab ul li.ativo { background-color:#ce4c62; }
+#portifolio_tab ul li a { font-family: 'ClarendonTLig', serif; font-size:18px; text-decoration:none; color:#fff; text-shadow: 1px 1px 1px #721c28; }
+#portifolio_tab ul li a:hover {  }
+
+/* aba portifolio > conteúdo */
+#portifolio_content_tab { width:336px; min-height:100%; background-color:#f2efd7; position:absolute; z-index:60; left:-200px; display:none; }
+#portifolio_content_tab p { line-height:18px; }
+
+#portifolio_content_tab #eu_sou { display:none; }
+#portifolio_content_tab #eu_sou p { margin:21px; }
+
+#portifolio_content_tab #trabalhos { margin:0 21px; }
+#portifolio_content_tab #trabalhos .job { margin-bottom:27px; clear:both; }
+#portifolio_content_tab #trabalhos .job h2 { font-family:'Georgia', serif; font-size:18px; color:#3a3931; padding:3px; margin-bottom:0; background-color:#e5e1c4; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+#portifolio_content_tab #trabalhos .job h3 { font-family:'Georgia', serif; font-size:14px; margin:5px 0 21px 0; }
+#portifolio_content_tab #trabalhos .job a { color:#93907b; text-decoration:none; }
+#portifolio_content_tab #trabalhos .job a:hover { color:#767466; text-decoration:underline; }
+
+#portifolio_content_tab #telegrama { display:none; margin:0 21px; background:url('images/envelope.png') no-repeat top right; }
+#portifolio_content_tab #telegrama h2 { font-size:25px; }
+#portifolio_content_tab #telegrama span { font-size:18px; }
+#portifolio_content_tab #telegrama a, 
+#portifolio_content_tab #telegrama a:visited, 
+#portifolio_content_tab #telegrama a:active { color:#93907b; }
+#portifolio_content_tab #telegrama a:hover { color:#3a3931; }
+#portifolio_content_tab #telegrama a#email_contato { font-size:18px; }
+
+
+/* aba blog */
+#blog_tab { width:523px; background-color:#f2efd7; position:absolute; z-index:70; left:-300px; display:none; min-height: 100%;}
+#blog_tab .conteudo { margin: 0 21px; padding:0; }
+#blog_tab .conteudo .post { margin-top:30px; }
+#blog_tab .conteudo .post h2 { font-family: 'ClarendonTLig', serif; font-size:30px; color:#767466; width:345px; float:left; margin:11px 0 22px }
+#blog_tab .conteudo .post h2 a { text-decoration:none; line-height: 27px; display: block; }
+#blog_tab .conteudo .post h2 a:hover { text-decoration:underline; }
+#blog_tab .conteudo .post .post_infos { float:right; display:inline-block; }
+#blog_tab .conteudo .post .post_infos span { display:block; text-align:right; }
+#blog_tab .conteudo .post .post_infos .categoria { color:#93907b; }
+#blog_tab .conteudo .post .post_infos .data { color:#dcd9c3; font-size:24px; font-weight:bold; }
+#blog_tab .conteudo .post .entry { clear:both; border-bottom:1px solid #dddac1; }
+#blog_tab .conteudo .post a { color:#93907b; }
+#blog_tab .conteudo .post a:hover { color:#767466; }
+
+#blog_tab .conteudo .post .post_footer { color:#93907b; border-bottom:1px solid #dddac1; height:40px; line-height:40px;  }
+#blog_tab .conteudo .post .post_footer a { text-decoration:none; }
+#blog_tab .conteudo .post .post_footer a:hover { text-decoration:underline; }
+#blog_tab .conteudo .post .post_footer .tags { float:left; }
+#blog_tab .conteudo .post .post_footer .comentarios { float:right; }
+#blog_tab .conteudo .post .post_social { clear:both; border-top:1px solid #dddac1; border-bottom:1px solid #c3c0a9; padding:10px 0; }
+
+
+/* comentários formulário */
+.comments-link input, 
+.comments-link textarea { border:none; background-color:#DCD9C3; padding:4px; }
+.comments-link textarea { width:450px; }
+.comments-link input { width:275px; }
+.comments-link label { display:block; }
+.comments-link span { font-size:10px; font-weight:normal; }
+.comments-link p { margin:5px; }
+.comments-link input[type=submit] { width:150px; background-color:#DCD9C3; text-align:center; color:#3A3931; text-transform:uppercase; }
+
+ol.commentlist { padding:0 16px 0 0; list-style:none; }
+
+ol.commentlist li.comment { padding:0 0 5px; margin:0 0 5px;  }
+ol.commentlist li { border-bottom:1px solid #c3c3c3; }
+ol.commentlist li.comment .comment-body { clear:both; padding:4px; }
+ol.commentlist li.comment .comment-body .vcard { width: 290px; display: inline-block; }
+ol.commentlist li.comment .comment-body .vcard .fn { font-weight:bold; padding-left:5px; }
+ol.commentlist li.comment .comment-body .comment-meta { display: block; width: 525px; text-align: right; float: right; }
+ol.commentlist li.comment .comment-body p { margin:25px 0 15px 39px; padding:0; display:block; }
+ol.commentlist li.comment .reply { display:none; }
+ol.commentlist li.comment .reply a { background-color:#000; color:#DCD9C3; text-align:center; padding:3px 15px; 
+								     height:25px; line-height:25px; }
+
+ol.commentlist li.comment .comment-awaiting-moderation { display: inline-block; color: #777; text-align: right; width: 525px; }
+
+ol.commentlist li.comment .comment-body:hover { background-color:#DCD9C3; }
+
+#voltar { border-top: 1px solid #C3C3C3; margin: 20px 0 35px 0; padding: 10px 0 0 0; }
+
+/* social - todas as abas */ 
+.social ul { list-style:none; margin:0; padding:0; height: 25px; }
+.social ul li { float:left; padding-right:10px; }
+
+#postPagination { height:50px; margin-top: 5px; }
+#postPagination a { text-decoration:none; color:#93907b; }
+#postPagination a:hover { text-decoration:underline; color:#3a3931; }
+#postPagination ul { margin:0; padding:0; }
+
